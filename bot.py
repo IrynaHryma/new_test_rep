@@ -100,6 +100,13 @@ def email_command(*args):
 def address_command(*args):
     pass
 
+# Show  days to birthday
+
+
+@handle_errors
+def show_birthday(*args):
+    pass
+
 
 @handle_errors
 def no_command(*args):
@@ -116,6 +123,7 @@ COMMANDS = {add: ("add",),
             birthday_greeting: ("birthday",),
             email_command: ("email"),
             address_command: ("address"),
+            show_birthday: ("show birthday")
             }
 
 
