@@ -93,11 +93,13 @@ def birthday_greeting(*args):
 def email_command(*args):
     pass
 
-# Adding new methods and commands
-
 
 @handle_errors
 def address_command(*args):
+    pass
+
+
+def verify_address():
     pass
 
 
