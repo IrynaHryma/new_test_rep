@@ -93,6 +93,13 @@ def birthday_greeting(*args):
 def email_command(*args):
     pass
 
+# Adding new methods and commands
+
+
+@handle_errors
+def address_command(*args):
+    pass
+
 
 @handle_errors
 def no_command(*args):
@@ -108,6 +115,7 @@ COMMANDS = {add: ("add",),
             find_command: ('search', 'find',),
             birthday_greeting: ("birthday",),
             email_command: ("email"),
+            address_command: ("address"),
             }
 
 
