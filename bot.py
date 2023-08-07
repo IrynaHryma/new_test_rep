@@ -81,12 +81,18 @@ def birthday_greeting(*args):
     if rec:
         greeting = rec.days_to_birthday()
         if greeting:
-           return greeting
+            return greeting
         else:
-           return f"No  birthday today for {name}"
-        
+            return f"No  birthday today for {name}"
+
     else:
-       return f"No contact with name{name} found"
+        return f"No contact with name{name} found"
+
+
+@handle_errors
+def email_command(*args):
+    pass
+
 
 @handle_errors
 def no_command(*args):
@@ -98,9 +104,10 @@ COMMANDS = {add: ("add",),
             phone: ("phone",),
             show_all: ("show all",),
             greeting: ("hello", "hi"),
-            exit_command: ("finish", "exit","end"),
+            exit_command: ("finish", "exit", "end"),
             find_command: ('search', 'find',),
             birthday_greeting: ("birthday",),
+            email_command: ("email"),
             }
 
 
