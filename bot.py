@@ -99,6 +99,10 @@ def address_command(*args):
     pass
 
 
+def verify_address():
+    pass
+
+
 @handle_errors
 def no_command(*args):
     return "Unknown command"
